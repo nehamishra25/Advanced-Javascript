@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<script type="text/javascript">
+		var x= prompt("Enter your email address.");
+		var result = ValidateEmail(x);
+		function ValidateEmail(mail)   
+		{
+			var chkpattern= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return chkpattern.test(mail);
+		}  
+		document.write(result);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

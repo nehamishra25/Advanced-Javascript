@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 5</title>
+	<script type="text/javascript">
+	function outerF(){
+		var a=10;
+		function innerF(){
+			var b=20;
+			return a*b;
+		}
+		var ans= innerF();
+		alert(ans);
+	}
+	</script>
+</head>
+<body>
+<input type="button" name="callFunc" value="Click!" onclick="outerF()">
+</body>
+</html>
