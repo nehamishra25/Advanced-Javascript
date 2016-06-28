@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 6</title>
+	<script type="text/javascript">
+	function person(first, last, email, contact) {
+    	this.first = first;
+    	this.last = last;
+    	this.email = email;
+    	this.contact = contact;
+	}
+	function details(){
+		var me = new person("Neha", "Mishra" , "neha.mishra@newgen.co.in", 9876543210);
+		document.getElementById("fname").innerHTML= me.first;
+		document.getElementById("lname").innerHTML= me.last;
+		document.getElementById("email").innerHTML= me.email;
+		document.getElementById("contact").innerHTML= me.contact;
+	}
+	</script>
+</head>
+<body>
+<!-- Create an object type person which consists of first name, last name, e-mail and phone number properties. Using JavaScript append these properties to appropriate place in an html document.-->
+<p id="fname"></p>
+<p id="lname"></p>
+<p id="email"></p>
+<p id="contact"></p>
+<button onclick="details()">Click me</button>
+</body>
+</html>
